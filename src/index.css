@@ -1,13 +1,98 @@
 body {
   margin: 0;
+  padding: 50px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #E5E5E5
 }
-
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.sidebar {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+  width: 250px;
+}
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+.sidebar_item input {
+  height: 100%;
+  margin-right: 10px;
+}
+.sortTab {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #DFE5EC;
+}
+.sortItem {
+  width: 50%;
+  padding: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #4A4A4A;
+  cursor: pointer;
+  transition: 200ms all;
+}
+.activeSortItem {
+  background: #2196F3;
+  color: white;
+}
+
+.ticketItem {
+  width: 500px;
+  height: 185px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.getNextPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  outline: none;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.getNextPage:hover {
+  opacity: 0.8;
 }
